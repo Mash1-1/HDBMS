@@ -89,8 +89,12 @@ FOREIGN KEY (PatientID) REFERENCES Patient(PatientID)
 );
 
 INSERT INTO Patient (FirstName, LastName, DOB, Gender, PhoneNumber, Address)
-VALUES ('Mahder', 'Ashenafi', '2005-01-01', 'Male', '+251912345678', 'Addis Ababa');
-
+VALUES 
+  ('Mahder', 'Ashenafi', '2005-01-01', 'Female', '+251912345678', 'Addis Ababa'),
+  ('Mussie', 'Tarekegn', '1999-11-15', 'Male', '+251911112222', 'Bahir Dar'),
+  ('Naod', 'Kebede', '2001-05-22', 'Male', '+251923456789', 'Gondar'),
+  ('Mussie', 'Taddesse', '2002-07-19', 'Male', '+251933456789', 'Jimma'),
+  ('Mehretabe', 'Abayneh', '2003-03-12', 'Male', '+251944456789', 'Mekelle');
 INSERT INTO Department (DepName) VALUES ('Cardiology'), ('Neurology');
 
 INSERT INTO DepartmentHead (FirstName, LastName, DepartmentID) VALUES
