@@ -95,6 +95,7 @@ VALUES
   ('Naod', 'Kebede', '2001-05-22', 'Male', '+251923456789', 'Gondar'),
   ('Mussie', 'Taddesse', '2002-07-19', 'Male', '+251933456789', 'Jimma'),
   ('Mehretabe', 'Abayneh', '2003-03-12', 'Male', '+251944456789', 'Mekelle');
+
 INSERT INTO Department (DepName) VALUES ('Cardiology'), ('Neurology');
 
 INSERT INTO DepartmentHead (FirstName, LastName, DepartmentID) VALUES
@@ -137,5 +138,4 @@ SELECT * from Patient;
 SELECT * from Department;
 
 UPDATE Department SET DepartmentHeadID = (SELECT DepartmentHeadID FROM DepartmentHead WHERE DepartmentID =DepartmentHead.DepartmentID) WHERE DepartmentID = 1;
-UPDATE Department SET DepartmentHeadID = (SELECT DepartmentHeadID FROM DepartmentHead WHERE DepartmentID =DepartmentHead.DepartmentID) WHERE DepartmentID = 2;
 SELECT * from Department;
